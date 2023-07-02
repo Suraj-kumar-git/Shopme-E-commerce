@@ -8,8 +8,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/shopmedb
-    username: root
-    password: 73524Idea#    #hikari:      #minimum-idle: 1
+    username: {username}
+    password: {password}    #hikari:      #minimum-idle: 1
       #maximum-pool-size: 2
   jpa:
     hibernate:
@@ -25,14 +25,14 @@ spring:
       client:
         registration:
           google:
-            client-id: 182557182495-4ojqb7gpdf0cee6i97md5b3tns5sbc1e.apps.googleusercontent.com
-            client-secret: zpJMafs7JAf4fNVLZirNcRnO
+            client-id: {google_developer_client_id}
+            client-secret: {google_developer_clien_secret}
             scope:
             - email
             - profile
           facebook:
-            client-id: 522415793398286
-            client-secret: 664b540e1aa5426ca77dbe06dd0535fe
+            client-id: {facebook_developer_client_id}
+            client-secret: {facebook_developer_client_secret}
             scope:
             - email
             - public_profile
